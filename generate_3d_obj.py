@@ -3,7 +3,6 @@ Extracts images from an "images" folder in the same directory, uploads to KIRI E
 Assumes a populated "images" folder already exists.
 '''
 
-
 import os
 import time
 import glob
