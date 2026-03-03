@@ -1,3 +1,9 @@
+'''
+Extracts images from an "images" folder in the same directory, uploads to KIRI Engine for cloud photogrammetry and saves the output ZIP file.
+Assumes a populated "images" folder already exists.
+'''
+
+
 import os
 import time
 import glob
