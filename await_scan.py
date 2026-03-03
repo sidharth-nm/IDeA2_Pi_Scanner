@@ -16,9 +16,10 @@ POLL_INTERVAL = 5  # seconds
 
 while True:
     response = requests.get(POLL_URL)
+    response.raise_for_status()
     data = response.json()
 
-    if data.get("start_scan"):
+    if data["statusCode"] == 0:
         print("Scan triggered, starting...")
         
         # TODO: RUN THE OTHER SCRIPTS HERE, ENDING WITH upload_to_cad_instructions.py
